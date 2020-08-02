@@ -1,0 +1,19 @@
+<div class="list-data">
+  <ul class="style-list">
+    <li *ngFor="let item of items" class="style-list">
+      <div *ngIf="item.isVisible" class="each-item">
+        <div>
+          <div class="button-header">
+            <h1>{{item.title}}</h1>
+            <p class="float-x-righ" (click)="deleteItem(item)"></p>
+          </div>
+          <p>{{item.description}}</p>
+        </div>
+        <div class="move-righ">
+          <button>Up</button>
+          <button>Down</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
