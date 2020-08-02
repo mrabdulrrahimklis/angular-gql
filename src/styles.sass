@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+$bg-color: hsl(0, 0, 19)
+$dot-color: gray
+
+$dot-size: 1px
+$dot-space: 15px
+
+body
+	background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color
+	background-size: $dot-space $dot-space
